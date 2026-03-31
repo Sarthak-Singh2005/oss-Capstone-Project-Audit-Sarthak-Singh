@@ -1,126 +1,130 @@
-# VITyarthi | Open Source Software  
-## The Open-Source Audit
+# OSS Audit Project – Python & Linux Shell
 
-A capstone project for the **OSS NGMC** course.
+**Student:** Sarthak Singh
+**Course:** Open Source Software
 
-This project presents a structured audit of the open-source software **Python**, along with five Linux shell scripts that demonstrate practical command-line skills and connect software freedom with real system administration tasks.
+---
 
-## Project Details
+## 📌 Project Description
 
-- **Course:** Open Source Software | Unit Coverage: 1–5
-- **Student Name:** Sarthak Singh
-- **Registration Number:** 24BAI10648
-- **Slot:** A13
-- **Date of Submission:** 31/03/2026
-- **Chosen Software:** Python
+This project is a Linux-based audit toolkit developed using Bash scripting. It demonstrates how open-source tools can be used to inspect system information, analyze files, and automate routine tasks.
 
-## About the Project
+The project focuses on practical applications of Python and Linux utilities for system monitoring and reporting.
 
-The report explores Python as an open-source project from multiple angles:
+---
 
-- its origin and the problem it was created to solve
-- the PSF License and the freedoms it grants
-- ethical questions around open source
-- Linux system integration and package analysis
-- the open-source ecosystem around Python
-- a comparison with the proprietary alternative MATLAB
+## 🚀 Features
 
-The project also includes five shell scripts that demonstrate scripting, file handling, looping, conditionals, and interactive input.
+### 🖥️ Script 1: System Identity Report
 
-## Report Structure
+Displays key system information:
 
-### Part A — Origin and Philosophy
-Covers Python’s purpose, history, license, the four freedoms of free software, and ethical questions around open source.
+* Operating system details
+* Kernel version
+* Current logged-in user
+* System uptime
+* License information
 
-### Part B — Linux Footprint
-Covers installation, binary location, permissions, configuration files, libraries, logs, users, and update mechanisms on Linux.
+---
 
-### Part C — The FOSS Ecosystem
-Covers dependencies, tools built on Python, community governance, and Python’s relation to the LAMP/LAPP stack.
+### 🐍 Script 2: FOSS Package Inspector
 
-### Part D — Open Source vs Proprietary
-Compares Python with MATLAB across cost, security, support, freedom to modify, and control.
+Checks Python installation status:
 
-## Shell Scripts Included
+* Installed Python version
+* Package details
+* Installation verification
 
-1. **System Identity Report**  
-   Displays Linux distribution details, kernel version, user information, uptime, and date/time.
+---
 
-2. **FOSS Package Inspector**  
-   Checks whether Python is installed, shows version details, and prints a short package description.
+### 💾 Script 3: Disk and Permission Auditor
 
-3. **Disk and Permission Auditor**  
-   Loops through important directories and reports size, permissions, owner, and group.
+Analyzes directories to display:
 
-4. **Log File Analyzer**  
-   Reads a log file line by line, counts keyword matches, and prints a summary.
+* Disk usage and storage size
+* File ownership
+* Permission settings
 
-5. **Open Source Manifesto Generator**  
-   Prompts the user with three questions and generates a personalized manifesto text file.
+---
 
-## Requirements
+### 📊 Script 4: Log File Analyzer
 
-- Linux system (Ubuntu/Debian recommended)
-- Bash shell
-- Python 3
-- Standard command-line tools such as:
-  - `uname`
-  - `whoami`
-  - `uptime`
-  - `ls`
-  - `du`
-  - `grep`
-  - `awk`
-  - `dpkg`
-  - `apt`
+Processes system log files to:
 
-## How to Run the Scripts
+* Count occurrences of specific keywords
+* Identify patterns or potential issues
 
-Make each script executable:
+---
+
+### 📝 Script 5: Open Source Manifesto Generator
+
+Generates a custom text file:
+
+* Takes user input
+* Creates a formatted manifesto
+* Saves output locally
+
+---
+
+## 📂 Project Structure
+
+oss-Capstone-Project-Audit-Sarthak-Singh/
+├── script1.sh
+├── script2.sh
+├── script3.sh
+├── script4.sh
+├── script5.sh
+└── README.md
+
+---
+
+## ⚙️ Requirements
+
+Ensure your system has:
+
+* Linux-based operating system
+* Bash shell
+* Basic command-line utilities
+* Python installed
+
+---
+
+## ▶️ How to Run
+
+### 1. Clone the Repository
 
 ```bash
-chmod +x script1.sh script2.sh script3.sh script4.sh script5.sh
+git clone https://github.com/Sarthak-Singh2005/oss-Capstone-Project-Audit-Sarthak-Singh.git
+cd oss-Capstone-Project-Audit-Sarthak-Singh
 ```
 
-Run a script with:
+### 2. Make Scripts Executable
+
+```bash
+chmod +x *.sh
+```
+
+### 3. Run Any Script
 
 ```bash
 ./script1.sh
-```
-
-For the log analyzer, provide a log file and keyword:
-
-```bash
-./script4.sh /var/log/syslog error
-```
-
-For the manifesto generator, run it interactively:
-
-```bash
+./script2.sh
+./script3.sh
+./script4.sh
 ./script5.sh
 ```
 
-## Suggested Folder Structure
+---
 
-```text
-OSSCapstoneProject/
-├── README.md
-├── report/
-│   └── OSSCapstoneProject.docx
-└── scripts/
-    ├── script1.sh
-    ├── script2.sh
-    ├── script3.sh
-    ├── script4.sh
-    └── script5.sh
-```
 
-## License
+## 📜 License
 
-This project is an academic submission based on open-source software concepts. Python itself is distributed under the **Python Software Foundation License**.
+This project is created for educational purposes and follows open-source principles.
 
-## Acknowledgements
+---
 
-- Python Software Foundation
-- Open-source community contributors
-- OSS NGMC course materials
+## 🙌 Acknowledgment
+
+This project was developed as part of the Open Source Software course to explore real-world applications of Linux and Python.
+
+---
